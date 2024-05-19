@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nutribalance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('imagens/fundo.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #cccccc;
+            min-height: 100vh; /* Assegura que o fundo cubra toda a altura da página */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9); /* Adiciona transparência para ver o fundo */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 50%; /* Ajuste conforme necessário */
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            box-sizing: border-box; /* Garante que padding e border são incluídos na largura total */
+        }
+
+        .btn-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagens/logo.png" alt="Logotipo Nutribalance">
+        </header>
+        <form>
+            <div class="input-group">
+                <label for="peso">Peso</label>
+                <input type="text" id="peso" name="peso" placeholder="75kg">
+            </div>
+            <div class="input-group">
+                <label for="altura">Altura</label>
+                <input type="text" id="altura" name="altura" placeholder="160cm">
+            </div>
+            <div class="input-group">
+                <label for="sexo">Sexo</label>
+                <select id="sexo" name="sexo">
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+            </div>
+            <a href="confirmacao.html" class="btn-link">Enviar informações</a>
+        </form>
+    </div>
+</body>
+</html>

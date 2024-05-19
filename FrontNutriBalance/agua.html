@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Consumo Diário de Água</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #fff;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: green;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .water-meter {
+            margin: 20px 0;
+        }
+        .water-level {
+            height: 20px;
+            background-color: #00bfff;
+            width: 8%; /* Initial width based on 200ml of 2500ml */
+            transition: width 0.5s ease;
+        }
+        .water-info, .back-button, .water-input {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="number"] {
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        img.logo, img.illustrative-img {
+            display: block;
+            margin: 10px auto;
+            height: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">A Sua Meta Diária de Água</div>
+        <img src="imagens/logo.png" alt="Logo" class="logo">
+        <!-- Inserindo imagem ilustrativa -->
+        <img src="imagens/water2.png" alt="Imagem Ilustrativa" class="illustrative-img">
+        <div class="water-meter">
+            <div class="water-level"></div>
+        </div>
+        <div class="water-info">200 ml / 2.500 ml</div>
+        <div class="water-input">
+            <input type="number" id="waterConsumed" placeholder="Adicionar ml">
+            <button onclick="updateWater()">Atualizar</button>
+        </div>
+        <div class="back-button">
+            <a href="home.html"><button>Voltar</button></a>
+        </div>
+    </div>
+    <script>
+        function updateWater() {
+            var consumed = document.getElementById("waterConsumed").value;
+            var totalConsumed = parseInt(consumed) + 200; // Start with 200ml already consumed
+            var waterLevel = document.querySelector('.water-level');
+            var waterInfo = document.querySelector('.water-info');
+            var percentage = totalConsumed / 2500 * 100;
+            waterLevel.style.width = percentage + '%';
+            waterInfo.textContent = totalConsumed + ' ml / 2.500 ml';
+        }
+    </script>
+</body>
+</html>

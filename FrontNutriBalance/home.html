@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>NutriBalance</title>
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    .logo {
+        max-height: 100px;
+        max-width: 100px;
+    }
+
+    .logout-link {
+        padding: 10px 20px;
+        background-color: #0B661F;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .logout-link:hover {
+        background-color: #0B661F;
+    }
+
+    body, html {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        height: 100%; /* Ocupar toda a altura disponível */
+        display: flex;
+        flex-direction: column; /* Elementos em coluna */
+    }
+
+    .content {
+        flex: 1; /* Ocupar o espaço restante */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centralizar verticalmente */
+        align-items: center; /* Centralizar horizontalmente */
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+
+    .greeting {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    p {
+        margin: 10px;
+        display: flex;
+        justify-content: center; /* Alinha horizontalmente ao centro */
+        align-items: center; /* Alinha verticalmente ao centro */
+        width: auto; /* Alterado para auto para melhor controle do alinhamento */
+    }
+
+    .icon {
+        width: 80px; /* Aumentado para 80px */
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    a {
+        display: flex; /* Permite flexbox dentro do link */
+        align-items: center; /* Alinha verticalmente ao centro dentro do link */
+        color: inherit; /* Manter a cor do link igual ao texto normal */
+        text-decoration: none; /* Remover sublinhado dos links */
+        justify-content: center; /* Garante centralização do conteúdo do link */
+        width: fit-content; /* Ajusta a largura ao conteúdo interno */
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <a href="#"><img src="imagens/LogoTamanhoOroginal.png" alt="Logotipo do site" class="logo"></a>
+        <a href="login.html" class="logout-link">Sair</a>
+    </div>
+    <div class="content">
+        <div class="greeting">
+            <img src="imagens/avataroriginal.png" alt="Avatar">
+            <h2>Olá, Joana</h2>
+            <p>Esperamos que você tenha um ótimo dia!</p>
+        </div>
+        <p>
+            <a href="chat.html"><img src="imagens/chatnutricionistamaior.png" class="icon" alt="Chat Nutricionista"></a>
+            <a href="macros.html"><img src="imagens/caloriasmaior.png" class="icon" alt="Calorias"></a>
+        </p>
+        <p>
+            <a href="#"><img src="imagens/bancodealimentosmaior.png" class="icon" alt="Banco de Alimentos"></a>
+            <a href="receitas.html"><img src="imagens/receitasmaior.png" class="icon" alt="Receitas"></a>
+        </p>
+        <p>
+            <a href="agua.html"><img src="imagens/aguamaior.png" class="icon" alt="Água"></a>
+        </p>
+    </div>
+</body>
+</html>

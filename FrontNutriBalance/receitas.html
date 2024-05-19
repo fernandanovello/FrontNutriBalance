@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Nutribalance - Receitas</title>
+<style>
+body, h1, h2, button, input, p, a {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #79c267;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+header input[type="search"] {
+    width: 80%;
+    padding: 5px;
+}
+
+header img {
+    max-height: 50px; /* Ajuste conforme necessário */
+    margin-right: 20px;
+}
+
+.back-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+nav button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.recipe {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.recipe h2 {
+    color: #4a752c;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe button, .recipe a {
+    width: 100%;
+    background-color: #4a752c;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nutrition span {
+    display: inline-block;
+    margin-right: 5px;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #79c267;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="home.html" class="back-link">Voltar</a>
+        <img src="imagens/logo.png" alt="Logo Nutribalance">
+        <h1>Nutribalance</h1>
+        <input type="search" placeholder="Procurar">
+    </header>
+
+    <nav>
+        <button>Meu banco de alimentos</button>
+        <button>Minhas receitas</button>
+    </nav>
+
+    <section class="recipe">
+        <h2>Receita de Pão de Queijo sem Leite</h2>
+        <img src="imagens/paoqueijo.png" alt="Pão de Queijo sem Leite">
+        <a href="paoqueijo.html">Clique para ver a receita completa</a>
+        <div class="nutrition">
+            <span>49g Carboidratos</span>
+            <span>10.4g Proteínas</span>
+            <span>20.5g Gorduras</span>
+            <span>408 kcal Calorias</span>
+        </div>
+    </section>
+
+    <section class="recipe">
+        <h2>Picadinho de Carne com Quiabo</h2>
+        <img src="imagens/ensopado.png" alt="Picadinho de Carne com Quiabo">
+        <button>Clique para ver a receita completa</button>
+        <div class="nutrition">
+            <span>23g Carboidratos</span>
+            <span>21g Proteínas</span>
+            <span>5.6g Gorduras</span>
+            <span>168 kcal Calorias</span>
+        </div>
+        <p>OBS: Valor nutricional está baseado em 100 gramas de carne.</p>
+    </section>
+
+    <footer>
+        <p>Envie suas receitas nutricionais e deliciosas no nosso e-mail, elas serão avaliadas pelos nossos nutricionistas e, se aprovadas, as colocamos aqui!</p>
+        <a href="mailto:receitasnutribalance@gmail.com">receitasnutribalance@gmail.com</a>
+    </footer>
+</div>
+</body>
+</html>

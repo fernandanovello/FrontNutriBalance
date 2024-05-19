@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Chat com Nutricionista</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            justify-content: space-between;
+        }
+
+        .chat-header .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .back-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+
+        .chat-box {
+            flex-grow: 1;
+            padding: 15px;
+            background-image: url('nutribalance-background.png');
+            background-size: cover;
+            background-position: center;
+            overflow-y: auto;
+        }
+
+        .message-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .message img.avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .message .message-content {
+            max-width: 70%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #e1f7d5;
+            position: relative;
+        }
+
+        .message.received .message-content {
+            background-color: #d4edda;
+        }
+
+        .message.sent .message-content {
+            background-color: #d1ecf1;
+            align-self: flex-end;
+            background-color: #f1f0f0;
+        }
+
+        .message .name {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .chat-input {
+            display: flex;
+            border-top: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .chat-input button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .chat-input button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <a href="home.html" class="back-button">Voltar</a>
+            <div class="header-right">
+                <img src="imagens/nutrichat.png" alt="Nutri Jéssica Andrade" class="avatar">
+                <span>Nutri Jéssica Andrade</span>
+            </div>
+        </div>
+        <div class="chat-box">
+            <div class="message-container">
+                <div class="message received">
+                    <img src="imagens/nutrichat.png" alt="Nutri Jéssica Andrade" class="avatar">
+                    <div class="message-content">
+                        <span class="name">Nutri Jéssica Andrade</span>
+                        <p>Olá, como posso ajudar?</p>
+                    </div>
+                </div>
+                <div class="message sent">
+                    <img src="imagens/joanachat.png" alt="Joana" class="avatar">
+                    <div class="message-content">
+                        <span class="name">Joana</span>
+                        <p>Estou em busca de reduzir o meu peso em 3 meses.</p>
+                    </div>
+                </div>
+                <div class="message sent">
+                    <img src="imagens/joanachat.png" alt="Joana" class="avatar">
+                    <div class="message-content">
+                        <span class="name">Joana</span>
+                        <p>Eu também esqueço de beber água com frequência.</p>
+                    </div>
+                </div>
+                <div class="message received">
+                    <img src="imagens/nutrichat.png" alt="Nutri Jéssica Andrade" class="avatar">
+                    <div class="message-content">
+                        <span class="name">Nutri Jéssica Andrade</span>
+                        <p>Irei analisar as suas informações de cadastro, como histórico, IMC e encaminho o seu projeto em minutos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Digite uma mensagem...">
+            <button>Enviar</button>
+        </div>
+    </div>
+</body>
+</html>

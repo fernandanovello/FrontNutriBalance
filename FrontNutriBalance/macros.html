@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nutribalance - Acompanhamento Diário</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f2f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #4caf50;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .meal {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .add-food {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #4caf50;
+            color: white;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+
+        .back-link {
+            background-color: transparent;
+            border: none;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .macro-counts {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .calories {
+            color: #d32f2f;
+            font-size: 20px;
+        }
+
+        .food-item {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="imagens/logo.png" alt="Logo Nutribalance" class="logo">
+        <a href="home.html" class="back-link">← Voltar</a>
+    </div>
+
+    <div class="content">
+        <div id="macro-counts" class="macro-counts">
+            <span id="total-calories" class="calories">0/1550 kcal</span> | 
+            <span id="total-carb">Carb: 0/197g</span> | 
+            <span id="total-prot">Prot: 0/80g</span> | 
+            <span id="total-gord">Gord: 0/53g</span>
+        </div>
+
+        <div class="meal">
+            <h4>Café da manhã</h4>
+            <a href="macrosup.html" class="add-food">+</a>
+        </div>
+
+        <div class="meal">
+            <h4>Almoço</h4>
+            <button class="add-food">+</button>
+        </div>
+
+        <div class="meal">
+            <h4>Lanches</h4>
+            <button class="add-food">+</button>
+        </div>
+
+        <div class="meal">
+            <h4>Jantar</h4>
+            <button class="add-food">+</button>
+        </div>
+    </div>
+<!--
+    <script>
+        // Mock data for demonstration
+        const foods = {
+            food1: { kcal: 0, carb: 0, prot: 0, gord: 0 },
+            food2: { kcal: 0, carb: 0, prot: 0, gord: 0 }
+        };
+
+        function updateMacros() {
+            let totalKcal = 0, totalCarb = 0, totalProt = 0, totalGord = 0;
+            Object.values(foods).forEach(food => {
+                totalKcal += food.kcal;
+                totalCarb += food.carb;
+                totalProt += food.prot;
+                totalGord += food.gord;
+            });
+
+            document.getElementById('total-calories').innerText = `${totalKcal}/1550 kcal`;
+            document.getElementById('total-carb').innerText = `Carb: ${totalCarb}/40g`;
+            document.getElementById('total-prot').innerText = `Prot: ${totalProt}/40g`;
+            document.getElementById('total-gord').innerText = `Gord: ${totalGord}/40g`;
+        }
+
+        // Initial update on page load
+        updateMacros();
+    </script>
+</body>
+</html>
+-->
